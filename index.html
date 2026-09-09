@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#130b12">
+<title>For Sukaina ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+:root{--bg:#09070a;--rose:#d78b9c;--cream:#fff6f1;--muted:#cdbbc0}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--cream);font-family:Montserrat,sans-serif}
+body{min-height:100vh;overflow-x:hidden}.screen{min-height:100svh;display:none;position:relative;overflow:hidden}.screen.active{display:flex}
+.center{width:min(920px,92%);margin:auto;text-align:center;position:relative;z-index:3}
+.glow{position:absolute;width:45vw;height:45vw;max-width:520px;max-height:520px;border-radius:50%;filter:blur(75px);opacity:.16;background:#b94e72;left:50%;top:38%;transform:translate(-50%,-50%)}
+h1,h2,.script{font-family:"Cormorant Garamond",serif}h1{font-size:clamp(3.2rem,13vw,7.5rem);line-height:.85;margin:16px 0}
+h2{font-size:clamp(2.2rem,8vw,4.5rem);font-weight:500;margin:12px 0}
+p{line-height:1.8}.eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:.68rem;color:var(--rose)}
+button{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.07);color:white;border-radius:999px;padding:14px 25px;font:500 .78rem Montserrat;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;backdrop-filter:blur(10px)}
+button:hover{background:rgba(255,255,255,.12)}button:active{transform:scale(.98)}
+.heart{font-size:2rem;animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.15)}}
+#intro{background:radial-gradient(circle at 50% 40%,#321621 0,#120a10 42%,#09070a 78%)}
+.intro-line{height:1px;background:linear-gradient(90deg,transparent,#d78b9c,transparent);width:min(420px,75%);margin:25px auto}
+#balloons{background:linear-gradient(180deg,#120a10,#07070a)}.balloon-area{position:absolute;inset:0;z-index:1}
+.balloon{position:absolute;width:72px;height:92px;border-radius:50% 50% 48% 48%;background:linear-gradient(135deg,rgba(255,255,255,.3),#9e4d68);box-shadow:0 14px 35px rgba(0,0,0,.35);cursor:pointer;animation:float 4s ease-in-out infinite}
+.balloon:after{content:"";position:absolute;width:1px;height:70px;background:#c5aeb5;left:50%;top:90px}.balloon:before{content:"";position:absolute;width:9px;height:9px;background:#9e4d68;bottom:-4px;left:calc(50% - 4px);transform:rotate(45deg)}
+@keyframes float{50%{transform:translateY(-18px) rotate(2deg)}}
+.pop{animation:pop .32s forwards}@keyframes pop{to{transform:scale(1.7);opacity:0}}
+.balloon-note{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:min(420px,82%);opacity:0;transition:.4s;pointer-events:none}
+.balloon-note.show{opacity:1}.balloon-note .note{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);padding:28px;border-radius:24px;backdrop-filter:blur(14px)}
+.progress{position:absolute;top:24px;left:50%;transform:translateX(-50%);z-index:5;color:#cdbbc0;font-size:.68rem;letter-spacing:.16em}
+#cake{background:radial-gradient(circle at 50% 55%,#3b1824,#0c080b 62%)}.cake-wrap{margin:35px auto;width:min(340px,82vw)}
+.cake{position:relative;margin:auto;width:230px;height:135px}.layer{position:absolute;left:15px;width:200px;height:70px;background:linear-gradient(#b96b7e,#7f3d56);border-radius:18px 18px 12px 12px;bottom:10px;box-shadow:0 18px 35px #0008}.layer.top{bottom:65px;height:55px;background:linear-gradient(#e0a0ad,#a9546c)}.cream{position:absolute;top:96px;left:28px;width:174px;height:18px;border-radius:50%;background:#fff0ed}.plate{position:absolute;bottom:0;left:0;width:230px;height:18px;border-radius:50%;background:#eee0df}
+.candle{position:absolute;width:10px;height:48px;background:#f8e6da;bottom:110px;border-radius:5px;left:110px}.flame{position:absolute;width:18px;height:28px;bottom:152px;left:106px;background:#ffd78b;border-radius:60% 40% 60% 40%;filter:blur(.2px);animation:flicker .16s infinite alternate}
+@keyframes flicker{to{transform:scale(1.12) rotate(4deg);opacity:.8}}.blown .flame{animation:none;opacity:0;transform:scale(0)}
+.mic-status{min-height:28px;color:#cdbbc0;font-size:.8rem}.fallback{display:inline-block;margin-top:4px}
+#letter{background:linear-gradient(145deg,#100a0d,#201017)}.letter-card{background:rgba(255,247,241,.055);border:1px solid rgba(255,255,255,.13);border-radius:28px;padding:clamp(28px,6vw,60px);text-align:left;box-shadow:0 25px 80px #0008;max-width:760px;margin:auto}.letter-card p{font-family:"Cormorant Garamond",serif;font-size:clamp(1.25rem,3.8vw,1.65rem);line-height:1.65;color:#fff4ef}.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:clamp(1.1rem,3.7vw,1.45rem)!important;color:#f2c4cd!important}
+#memories{background:#09070a}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:28px auto;max-width:820px}.gallery img{width:100%;height:260px;object-fit:cover;border-radius:18px;opacity:.9;transition:.4s}.gallery img:nth-child(2),.gallery img:nth-child(5){transform:translateY(24px)}.gallery img:hover{transform:scale(1.02)}
+#final{background:radial-gradient(circle at 50% 45%,#401724,#10080d 62%,#070609)}.final-name{font-size:clamp(3rem,12vw,6.5rem);margin:8px}.final-msg{font-family:"Cormorant Garamond",serif;font-size:clamp(1.3rem,4vw,1.8rem);max-width:680px;margin:25px auto;color:#f6dfe3}
+.next{margin-top:28px}.hidden{display:none!important}.confetti{position:fixed;inset:0;pointer-events:none;z-index:10}
+@media(max-width:650px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:210px}.gallery img:nth-child(2),.gallery img:nth-child(5){transform:none}.balloon{width:60px;height:78px}}
+</style>
+</head>
+<body>
+<canvas class="confetti" id="confetti"></canvas>
+
+<section class="screen active" id="intro">
+  <div class="glow"></div><div class="center">
+    <div class="eyebrow">A little surprise from Mumbai</div>
+    <div class="heart">♡</div>
+    <h1>Sukaina</h1>
+    <div class="intro-line"></div>
+    <p style="color:var(--muted);max-width:520px;margin:0 auto 26px">Tomorrow may find us in different cities…<br>but I didn't want your birthday to begin without me being there somehow.</p>
+    <button onclick="go('balloons');startAudio()">Open your surprise</button>
+  </div>
+</section>
+
+<section class="screen" id="balloons">
+  <div class="progress">SURPRISE 01 · POP THE BALLOONS</div>
+  <div class="balloon-area" id="balloonArea"></div>
+  <div class="balloon-note" id="balloonNote"><div class="note"><div class="eyebrow">A little secret</div><h2 id="noteText"></h2><button onclick="nextBalloon()">Keep going ♥</button></div></div>
+</section>
+
+<section class="screen" id="cake">
+  <div class="center">
+    <div class="eyebrow">SURPRISE 02 · MAKE A WISH</div>
+    <h2>Your birthday cake 🎂</h2>
+    <p style="color:var(--muted)">Tap the button and give the candle a little blow.<br>Your phone may ask for microphone permission.</p>
+    <div class="cake-wrap">
+      <div class="cake" id="cakeArt"><div class="plate"></div><div class="layer"></div><div class="layer top"></div><div class="cream"></div><div class="candle"></div><div class="flame"></div></div>
+    </div>
+    <div class="mic-status" id="micStatus">Ready when you are ✨</div>
+    <button id="blowBtn" onclick="tryBlow()">Blow the candle</button>
+    <button class="fallback" onclick="candleOut()">Tap if microphone doesn't work</button>
+  </div>
+</section>
+
+<section class="screen" id="letter">
+  <div class="center">
+    <div class="eyebrow">SURPRISE 03 · A LETTER</div>
+    <div class="letter-card">
+      <h2>Happy Birthday, my love.</h2>
+      <p>Sukaina,</p>
+      <p class="tamil">வெறுப்பதற்கு ஆயிரம் காரணம் இருந்தாலும் நேசிப்பதற்கு ஒரே காரணம்..,, நீயே</p>
+      <p>Being away from you tomorrow is not how I wanted to spend your birthday. I wish I could be right there beside you, see your smile, annoy you a little, and celebrate you properly.</p>
+      <p>But distance is only distance. It doesn't change how much you mean to me, or how grateful I am for the life we are building together.</p>
+      <p>Happy Birthday, Sukaina. ❤️</p>
+      <p style="text-align:right">— Arif</p>
+      <div style="text-align:center"><button onclick="go('memories')">Our little memories →</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="screen" id="memories">
+  <div class="center">
+    <div class="eyebrow">SURPRISE 04 · US</div>
+    <h2>Somewhere between<br>all these moments…</h2>
+    <div class="gallery">
+      <img src="photos/memory-1.jpg"><img src="photos/memory-2.jpg"><img src="photos/memory-3.jpg">
+      <img src="photos/memory-4.jpg"><img src="photos/memory-5.jpg"><img src="photos/memory-6.jpg">
+    </div>
+    <p style="color:var(--muted)">…we made a life that I wouldn't trade for anything.</p>
+    <button onclick="go('final');celebrate()">One last surprise ✨</button>
+  </div>
+</section>
+
+<section class="screen" id="final">
+  <div class="glow"></div><div class="center">
+    <div class="heart">♥</div><div class="eyebrow">FROM ARIF · WITH ALL MY LOVE</div>
+    <h1 class="final-name">Happy Birthday,<br>Sukaina</h1>
+    <p class="final-msg">I may be in Mumbai and you may be in Coimbatore, but tomorrow, a piece of my heart is right there with you.</p>
+    <p class="final-msg">May this year bring you every happiness you deserve. Keep smiling, keep shining, and keep being you.</p>
+    <div class="intro-line"></div>
+    <p class="script" style="font-size:1.7rem">I love you. Always. ❤️</p>
+  </div>
+</section>
+
+<script>
+const notes=[
+ "One reason I can never stay mad at you… that smile.",
+ "Some of my favourite memories have one thing in common: you.",
+ "Distance is temporary. You are my forever.",
+ "Okay… the best surprise is still waiting. ❤️"
+];
+let popped=0,noteIndex=0,audioCtx=null,analyser=null,micStream=null;
+
+function go(id){
+ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0,0);
+ if(id==='balloons') setupBalloons();
+}
+function setupBalloons(){
+ const area=document.getElementById('balloonArea'); area.innerHTML=''; popped=0; noteIndex=0;
+ for(let i=0;i<8;i++){
+   const b=document.createElement('div'); b.className='balloon';
+   b.style.left=(8+Math.random()*84)+'%'; b.style.top=(12+Math.random()*68)+'%';
+   b.style.animationDelay=(Math.random()*-3)+'s';
+   b.style.transform='rotate('+(Math.random()*12-6)+'deg)';
+   b.onclick=()=>popBalloon(b); area.appendChild(b);
+ }
+}
+function popBalloon(b){
+ if(b.classList.contains('pop'))return;
+ b.classList.add('pop'); popped++;
+ document.getElementById('noteText').textContent=notes[Math.min(noteIndex,notes.length-1)];
+ noteIndex++;
+ document.getElementById('balloonNote').classList.add('show');
+ if(popped===8){
+   setTimeout(()=>{document.getElementById('noteText').textContent="You found them all… now for the real birthday wish. 🎂";},350);
+ }
+}
+function nextBalloon(){
+ document.getElementById('balloonNote').classList.remove('show');
+ if(popped>=8)setTimeout(()=>go('cake'),300);
+}
+async function tryBlow(){
+ const status=document.getElementById('micStatus');
+ try{
+  if(!navigator.mediaDevices?.getUserMedia) throw new Error();
+  micStream=await navigator.mediaDevices.getUserMedia({audio:true});
+  audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  const source=audioCtx.createMediaStreamSource(micStream);
+  analyser=audioCtx.createAnalyser(); analyser.fftSize=1024; source.connect(analyser);
+  status.textContent="Listening… now blow toward your microphone 💨";
+  const data=new Uint8Array(analyser.fftSize); let started=performance.now();
+  function check(){
+   analyser.getByteTimeDomainData(data);
+   let sum=0; for(let i=0;i<data.length;i++){let x=(data[i]-128)/128;sum+=x*x}
+   let rms=Math.sqrt(sum/data.length);
+   if(rms>0.075){candleOut();return}
+   if(performance.now()-started<15000)requestAnimationFrame(check);
+   else status.textContent="No problem — use the tap button below.";
+  } check();
+ }catch(e){status.textContent="Microphone unavailable — use the tap button below."}
+}
+function candleOut(){
+ if(document.getElementById('cakeArt').classList.contains('blown'))return;
+ document.getElementById('cakeArt').classList.add('blown');
+ if(micStream)micStream.getTracks().forEach(t=>t.stop());
+ document.getElementById('micStatus').textContent="Wish made. ❤️";
+ setTimeout(()=>go('letter'),1300);
+}
+function startAudio(){
+ try{
+  audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  const notes=[261.63,329.63,392,523.25,392,329.63];
+  let t=audioCtx.currentTime;
+  notes.forEach((f,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(.0001,t+i*.55);g.gain.exponentialRampToValueAtTime(.035,t+i*.55+.03);g.gain.exponentialRampToValueAtTime(.0001,t+i*.55+.5);o.connect(g).connect(audioCtx.destination);o.start(t+i*.55);o.stop(t+i*.55+.52)});
+ }catch(e){}
+}
+function celebrate(){
+ const c=document.getElementById('confetti'),ctx=c.getContext('2d'); c.width=innerWidth;c.height=innerHeight;
+ const bits=Array.from({length:150},()=>({x:innerWidth/2,y:innerHeight*.35,vx:(Math.random()-.5)*8,vy:Math.random()*-8-2,s:3+Math.random()*5,r:Math.random()*6}));
+ let frame=0; function draw(){ctx.clearRect(0,0,c.width,c.height);bits.forEach(p=>{p.x+=p.vx;p.vy+=.18;p.y+=p.vy;p.r+=.08;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillStyle='rgba(255,190,205,.85)';ctx.fillRect(-p.s/2,-p.s/2,p.s,p.s);ctx.restore()});if(frame++<220)requestAnimationFrame(draw)}draw();
+}
+window.addEventListener('resize',()=>{const c=document.getElementById('confetti');c.width=innerWidth;c.height=innerHeight});
+</script>
+</body>
+</html>
